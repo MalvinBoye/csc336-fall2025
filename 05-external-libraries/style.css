@@ -1,0 +1,79 @@
+body {
+    background: url(chopbard1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    line-height: 1.6;
+
+  }
+
+.ChopBard {
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  text-align: center;
+  margin: 20% 30%;
+  position: absolute;
+}
+
+.ChopBard h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 85px;
+  text-transform: uppercase;
+
+}
+
+
+
+.menubar a{
+  font-family: 'Courier New', Courier, monospace;
+  float: right;
+  list-style: none;
+  margin-top: 20px;
+  padding-right: 10px;
+  color:#fff;
+  padding: 5px 20px;
+  font-size: 14px;
+
+}
+
+.menubar a:hover {
+  color: gold;
+}
+
+#messageBox {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.8);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  max-width: 250px;
+  opacity: 0;         
+  transform: scale(0.8);
+  pointer-events: none; 
+  font-family:'Courier New', Courier, monospace
+}
+
+.hidden {
+  display: none;
+}
+
+.scramble{
+  font-size: 90px;
+  text-align: center;
+  font-family: 'Bubblegum Sans', cursive;
+  color: white;
+  min-width: 180px;
+}
+
+
+.flexed { 
+  display: flex; 
+  flex-direction: row;
+  gap: 2rem;
+}

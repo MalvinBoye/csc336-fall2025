@@ -1,3 +1,4 @@
+
 const btn = document.getElementById("homebtn");
 
 gsap.registerPlugin(ScrambleTextPlugin);
@@ -9,7 +10,7 @@ const tween = gsap.to(item, {
   duration: 1.5,
   scrambleText: {
     text: "WORK IN PROGRESS , USE YOUR IMAGINATION FOR NOW",
-    chars: "<>#%&/!?$*....LOVE",
+    chars: "<>#%&/!?$*.LOVE",
     revealDelay: 1
   },
   paused: true

@@ -1,0 +1,63 @@
+body {
+    background: #02010c;
+    background-size: cover;
+    background-position: center center; 
+    height: 100vh;
+    position: relative;
+    line-height: 1.6;
+    display: flex;                
+    justify-content: space-evenly; 
+    align-items: center;           
+    margin: 0;
+
+  }
+
+h1 {
+    font-size: 100px;
+    text-align:center;
+    color:rgb(245, 242, 246); 
+       
+}
+
+#jokearea {
+    max-width: 700px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #000000cc;
+    color:#fff;
+    background: url(advise.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#actualjoke {
+    text-shadow: rgb(255, 253, 253);
+    font-weight:bold;
+    color: yellow;   
+}
+#jokee {
+    font-weight:bold;
+    font-size: larger;  
+}
+
+#advice-finder {
+    max-width: 400px;
+    padding: 2rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #000000cc;
+    background: url(kermit.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+}
+#memeingbutton {
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+  

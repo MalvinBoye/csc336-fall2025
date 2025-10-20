@@ -1,0 +1,57 @@
+{
+    "regions": [
+        {
+           "name": "Tse Addo",
+           "climate": "Tropic",
+           "towns": [
+            {
+                "name": "Koolemi",
+                "population": 6700,
+                "notable_people": [
+                    {
+                        "name": "Nii Tetteh",
+                        "role": "Chief",
+                        "items": [
+                            "Golden Stool",{
+                                "name": "Onye",
+                                "level": "royalty"
+                            },
+                            "AURA"
+                        ]
+                            
+                    },
+                    {
+                        "name": "Nii Ama",
+                        "role": "Mate",
+                        "items": [
+                            "Susu Pouch",
+                            {
+                                "name":"Change",
+                                "level": "commoner"
+                            },
+                            "Nsuo"
+                        ]
+                    }
+                ]
+            }
+           ]
+        },
+
+        {
+            "name": " Masii",
+            "climate": "Wintery",
+            "towns": [
+                {
+                    "name": "Nkrai",
+                    "population": 968,
+                    "notable_people":[
+                        {
+                            "name": "Gyegye",
+                            "role": "Cook"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

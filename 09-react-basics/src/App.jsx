@@ -1,80 +1,28 @@
-import { useState } from 'react';
-import MealItem from "./MealItem";
+import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import Home from "./Home.jsx";
+import About from "./About.jsx";
+import ApiAdvice from "./ApiAdvice.jsx";
 import "./App.css";
 
-function App() {
-  const [meals, setMeals] = useState([
-    {
-      name: "Jollof Rice",
-      ingredients: ["Rice", "Tomato","Onion","Pepper","Chicken","Stock"],
-      favourite: true,
-    },
-    {
-      name: "Kenkey and Tilapia",
-      ingredients: ["Corn Dough", "Cassava Dough","Haboneros","Shrimps","Tomatoes"],
-      favourite: false,
-    }
-  ]);
-
-  const [mealName, setMealName] = useState("");
-  const [ingredients, setIngredients] = useState("");
-
-  function handleAddMeal() {
-    if(mealName.trim() === "" || ingredients.trim() === "")
-      return;
-  
-
-  const newMeal = {
-    name: mealName,
-    ingredients: ingredients.split(",").map ((i) => i.trim()),
-    favourite:false,
-  };
-
-  setMeals([...meals, newMeal]);
-  setMealName("");
-  setIngredients("");
-  
+function App () {
+    return (
+    < >
+        <BrowserRouter>
+            <nav>
+                <Link to = "/" className="nav-btn">Home</Link>
+                <Link to = "/about" className="nav-btn">About</Link>
+                <Link to ="/advice" className="nav-btn" >Advice</Link>
+            </nav>
+            
+          
+            <Routes>
+                <Route path = "/" element={<Home />}/>
+                <Route path = "/about" element={<About />}/>
+                <Route path = "/advice" element={<ApiAdvice />}/>
+            </Routes>
+          
+        </BrowserRouter>
+    </>
+    );
 }
-
-function toggleFavourite(index) {
-  const updated =[...meals];
-  updated[index].favourite = !updated[index].favourite;
-  setMeals(updated);
-}
-
-  return(
-    <div className="App">
-      <h1 className="title">Your Boring Meals</h1>
-      <p className="subtitle">Ingredients to Your favorite meals</p>
-
-      <div className="input-section">
-        <input
-          type="text"
-          placeholder="Meal name"
-          value={mealName}
-          onChange={(e) => setMealName(e.target.value)}
-        />
-        <input
-          type="text"
-          placeholder="Ingredients(comma seperated)"
-          value={ingredients}
-          onChange={(e) => setIngredients(e.target.value)}
-        />
-        <button onClick={handleAddMeal}>Add Meal</button>
-      </div>
-
-      <div className="meal-list">
-        {meals.map((meal, index) => (
-          <MealItem
-            key={index}
-            meal={meal}
-            onFavouriteToggle={() => toggleFavourite(index)}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-
 export default App;

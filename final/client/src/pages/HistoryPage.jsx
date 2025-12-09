@@ -30,6 +30,9 @@ export default function HistoryPage() {
               Completed: {new Date(s.completedAt).toLocaleString()}
             </p>
           </div>
+
+
+
         ))}
        </div>
     </div>

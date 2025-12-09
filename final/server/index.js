@@ -59,7 +59,7 @@ app.post("/api/sessions", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.send("StudyTimer+ backend is running.");
+  res.send("Backend Is LIVE.");
 });
 
 app.listen(PORT, () => {

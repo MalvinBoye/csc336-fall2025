@@ -9,7 +9,7 @@ Users choose their study mode, complete focus sessions, and receive a motivation
 Render
 
 FrontEnd(Reacts)
-https://notime-studytimer.onrender.com/timer
+https://notime-studytimer.onrender.com/
 
 BackEnd(Express)
 https://csc336-fall2025-final.onrender.com/

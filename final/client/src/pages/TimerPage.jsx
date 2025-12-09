@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
-import TimerScreen from "../components/Timerscreen";
+import TimerScreen from "../components/TimerScreen";
 
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:4000";
+const API = import.meta.env.VITE_API_URL || "https://csc336-fall2025-final.onrender.com/";
 
 export default function TimerPage({
   selectedMode,

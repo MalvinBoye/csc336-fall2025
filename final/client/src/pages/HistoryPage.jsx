@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:4000";
+const API = import.meta.env.VITE_API_URL || "https://csc336-fall2025-final.onrender.com/";
 
 export default function HistoryPage() {
-  
+
   const [sessions, setSessions] = useState([]);
 
 

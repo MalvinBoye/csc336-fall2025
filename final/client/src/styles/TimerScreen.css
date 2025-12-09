@@ -1,0 +1,128 @@
+.timer-screen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.timer-layout {
+  width: 100%;
+  max-width: 640px;
+}
+
+.timer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.session-pill {
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  border: 1px solid black;
+  font-size: 0.85rem;
+  background: white;
+  color: black;
+}
+
+.timer-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid black;
+  padding: 2rem;
+  text-align: center;
+}
+
+.timer-name {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.timer-phase {
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.timer-display {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.timer-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid black;
+  background: white;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: black;
+  width: 0%;
+  transition: width 0.2s linear;
+}
+
+.timer-footer {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Joke overlay */
+
+.joke-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  z-index: 50;
+}
+
+.joke-card {
+  max-width: 420px;
+  width: 100%;
+  background: white;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.joke-title {
+  margin-bottom: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.joke-subtitle {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.joke-box {
+  border: 1px solid black;
+  padding: 1rem;
+  background: white;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.joke-footer {
+  font-size: 0.75rem;
+  color: #666;
+}

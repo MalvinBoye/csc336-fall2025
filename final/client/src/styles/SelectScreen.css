@@ -1,0 +1,112 @@
+.select-screen {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.select-card {
+  width: 100%;
+  max-width: 640px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid black;
+  padding: 2rem;
+  text-align: center;
+}
+
+.select-header {
+  margin-bottom: 1.5rem;
+}
+
+.select-title {
+  letter-spacing: 0.05em;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem;
+}
+
+.select-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.mode-wheel {
+  border-radius: 12px;
+  border: 1px solid black;
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  background: white;
+}
+
+.mode-icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.mode-name {
+  margin: 0 0 0.3rem;
+  font-size: 1.3rem;
+}
+
+.mode-meta {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.mode-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.custom-settings {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: grid;
+  gap: 1rem;
+}
+
+.custom-field {
+  text-align: left;
+}
+
+.custom-label {
+  display: block;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+  color: #444;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid black;
+  background: white;
+  color: black;
+  font-size: 1rem;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.select-footer {
+  margin-top: 1.2rem;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+/* Simple responsive */
+@media (min-width: 640px) {
+  .custom-settings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

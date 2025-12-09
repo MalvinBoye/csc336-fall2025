@@ -1,0 +1,133 @@
+:root {
+  --bg: white;
+  --bg-soft: white;
+  --accent-soft: black;
+  --border: black;
+  --card-bg: white;
+  --radius-lg: 18px;
+  --shadow-strong: 0 24px 60px rgba(0, 0, 0, 0.9);
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  padding-top: 50px;
+}
+
+body {
+  font-family: var(--font-mono);
+  background: white;
+  color: black;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 24px;
+}
+
+/* Global button styles */
+
+.btn {
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.btn-primary {
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
+  color: var(--fg);
+  padding: 0.65rem 1.75rem;
+  box-shadow: 0 18px 35px rgba(15, 23, 42, 0.9);
+}
+
+.btn-primary:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--fg);
+  border-color: var(--border);
+  padding: 0.55rem 1.3rem;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.btn-circle {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+
+.explosion-overlay {
+  background: white;
+  color: black;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 999;
+}
+
+
+.explosion-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+
+.explosion-big-text {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.explosion-sub {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+
+
+.three-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 400px;
+}
